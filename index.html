@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>ÝSMAÝL ÞENÖNDER</title>
+    <style type="text/css">
+        .main {
+            background-image: url('ismail_bg.jpg');
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+
+        .text {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .lang {
+            text-decoration:underline; 
+            cursor:pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        function changeLang(val) {
+            var endiv = document.getElementById("endiv");
+            var trdiv = document.getElementById("trdiv");
+            if (val == 'tr')
+            {
+                endiv.style.display = "none";
+                trdiv.style.display = "block";
+            }
+               
+            if (val == 'en')
+            {
+                trdiv.style.display = "none";
+                endiv.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="main" id="trdiv">
+        <div style="position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
+            <p class="text">Sitemi Yeniliyorum :)</p>
+            <br />
+            <p class="text">Bu süre zarfýnda bana þuralardan ulaþabilirsiniz:</p>
+            <br />
+            <a class="text" target="_blank" href="https://www.linkedin.com/in/ismailsenonder/"><img src="logo1.png" /></a>
+            <a class="text" target="_blank" href="https://github.com/ismailsenonder"><img src="logo2.png" /></a>
+            <br />
+            <div style="text-align:center;"><a class="text lang" style="text-decoration:underline;" onclick="changeLang('en')">Click for English</a></div>
+        </div>
+    </div>
+    <div class="main" id="endiv" style="display:none;">
+        <div style="position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
+            <p class="text">I am renewing my website :)</p>
+            <br />
+            <p class="text">Until then, you can contact me through these links:</p>
+            <br />
+            <a class="text" target="_blank" href="https://www.linkedin.com/in/ismailsenonder/"><img src="logo1.png" /></a>
+            <a class="text" target="_blank" href="https://github.com/ismailsenonder"><img src="logo2.png" /></a>
+            <br />
+            <div style="text-align:center;"><a class="text lang" onclick="changeLang('tr')">Türkçe için týklayýnýz</a></div>
+            
+        </div>
+    </div>
+</body>
+</html>
